@@ -1,0 +1,67 @@
+
+<html>
+  <head>
+    <title>FCC Simon game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Passion+One:400,900" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=BioRhyme+Expanded:400,700" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Katibeh" rel="stylesheet"/>
+    <link href='simon.css' type='text/css' rel='stylesheet'/>
+  </head>
+  <body class="text-center">
+    <main class="hidden">
+      <button id="inst" class="btn btn-default"><span id="instTxt">Instructions</span></button>
+      <div id="simonShell" class="container-fluid">
+        <div id="simonTop" class="row-fluid">
+          <div id="green" class="col-xs-6 innerShadow color disabled"></div>
+          <div id="red" class="col-xs-6 innerShadow color disabled"></div>
+        </div>
+        <div id="simonBottom" class="row-fluid">
+          <div id="blue" class="col-xs-6 innerShadow color disabled"></div>
+          <div id="yellow" class="col-xs-6 innerShadow color disabled"></div>
+        </div>
+        <div id="controlPanel" class="containter-fluid"><span id="logo" class="text-center">SIMON</span>
+          <div class="row-fluid"><span id="count">count</span>
+            <div id="roundDisplay"><span id="round"></span></div>
+          </div>
+          <div class="row-fluid"><span id="start">start</span><span id="sStrict">strict</span>
+            <div id="startBtn" class="disabled"></div>
+            <div id="strictBtn" class="disabled"></div>
+            <div id="strictLight" class="hidden"></div>
+          </div>
+          <div class="row-fluid"><span id="on">on</span>
+            <div id="onOffSwitch">
+              <div id="slideOn"></div>
+              <div id="slideOff"></div>
+            </div><span id="off">off</span>
+          </div>
+          <div class="row-fluid"><span id="E">E</span><span id="M">M</span><span id="H">H</span>
+            <div id="EMH">
+              <div id="slideE" class="selected"></div>
+              <div id="slideM" class="disabled"></div>
+              <div id="slideH" class="disabled"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="container-fluid">
+      <div id="tutorial" class="row-fluid well">
+        <div id="tutorialMsg">
+          <h2 id="wel" class="tutH2">Welcome to Simon</h2><span class="tutSpan">This is Simon, the classic 80's memory game. If you've ever played Simon before, you should find it very familiar.</span><br/>
+          <h2 class="tutH2">Gameplay</h2><span class="tutSpan">To play Simon, turn it on, choose your difficulty, and if you want to play in strict mode, click the strict button. Simon will start building a sequence of colors and sounds for you to memorize. The number in the center will display the current count, which corresponds to the number of sounds in your sequence. Simon starts with 1 sound, if you respond correctly, Simon will play back the previous sound, plus a new one. Simon will repeat this process until you cannot complete the sequence, or until you beat Simon.</span>
+          <h2 class="tutH2">Difficulty</h2><span class="tutSpan">In this version of Simon, there are 3 levels of difficulty, easy(E), medium(M), and hard(H). For easy, to achieve a win, an 11 move sequence must be memorized, for medium, a 20 move sequence, and for hard, a 32 move sequence.</span><br/>
+          <h2 class="tutH2">Strict Mode</h2><span class="tutSpan">In addition to the levels of difficulty, we also have strict mode. Strict mode only allows 1 attempt at completing the given sequence. If a wrong move is made, it's game over. Simon will restart at 1. If you are not in strict mode, Simon will replay the current sequence over for you until you get it correct.</span><br/>
+          <button id="playSimon" class="btn btn-default"><span id="ready">I'm ready to play</span></button>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src='simon.js'></script>
+  </body>
+</html>

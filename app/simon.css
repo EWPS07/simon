@@ -1,0 +1,386 @@
+/* HTML ELEMENTS */
+
+body {
+  background-image: url(http://www.texturex.com/albums/Wood-Textures/dark%20wood%20texture%20plank%20floor%20wooded%20panel%20free%20stock%20photo.jpg);
+  background-size: cover;
+  padding: 0vw;
+  margin: 0vw;
+}
+
+
+/* ID'S */
+
+#simonShell {
+  border-radius: 100%;
+  padding: .75vw;
+  height: 50vw;
+  width: 50vw;
+  background-color: #232529;
+  position: absolute;
+  left: 0vw;
+  right: 0vw;
+  top: 3vw;
+  box-shadow: .25vw .5vw .75vw 1vw black;
+}
+
+#simonTop,
+#simonBottom {
+  margin: 0vw;
+  padding: 0vw;
+}
+
+#green,
+#red,
+#blue,
+#yellow,
+#controlPanel {
+  padding: 0vw;
+  margin: 0vw;
+  height: 24.25vw;
+  width: 24.25vw;
+}
+
+#green {
+  opacity: 0.5;
+  background-color: #5ec100;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 10%;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 80%;
+  border-right: .75vw solid #232529;
+  border-bottom: .75vw solid #232529;
+}
+
+#red {
+  opacity: 0.5;
+  border-top-right-radius: 100%;
+  border-top-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  border-bottom-left-radius: 80%;
+  background-color: #d70000;
+  border-left: .75vw solid #232529;
+  border-bottom: .75vw solid #232529;
+}
+
+#blue {
+  opacity: 0.5;
+  border-bottom-left-radius: 100%;
+  border-top-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  border-top-right-radius: 80%;
+  background-color: #051DFF;
+  border-right: .75vw solid #232529;
+  border-top: .75vw solid #232529;
+}
+
+#yellow {
+  opacity: 0.5;
+  border-bottom-right-radius: 100%;
+  border-top-right-radius: 10%;
+  border-bottom-left-radius: 10%;
+  border-top-left-radius: 80%;
+  background-color: #fff815;
+  border-top: .75vw solid #232529;
+  border-left: .75vw solid #232529;
+}
+
+#controlPanel {
+  padding: none;
+  background-color: #232529;
+  border-radius: 100%;
+  position: absolute;
+  top: 12.875vw;
+  left: 12.875vw;
+  border: .9vw solid white;
+  box-shadow: 0vw 0vw 0vw 1vw #232529;
+  /*   pointer-events:none; */
+}
+
+#logo {
+  color: white;
+  text-shadow: .25vw .25vw .75vw black;
+  font-weight: bold;
+  font-size: 5.5vw;
+  position: absolute;
+  left: 0vw;
+  right: 0vw;
+  top: 2vw;
+  font-family: 'Passion One', cursive;
+}
+
+#count {
+  position: absolute;
+  left: 0vw;
+  right: 0vw;
+  top: 7.75vw;
+}
+
+#roundDisplay {
+  position: absolute;
+  left: 7.75vw;
+  right: 7.75vw;
+  top: 9.25vw;
+  height: 3vw;
+  width: 7vw;
+  border: solid black 1px;
+  background-color: gray;
+  border-radius: 6%;
+  padding: none;
+}
+
+#round {
+  font-family: 'space mono', monospace;
+  color: #a40000;
+  text-shadow: 1px 1px 1px black;
+  font-size: 3vw;
+  position: absolute;
+  top: -.75vw;
+  bottom: 0vw;
+  left: 0vw;
+  right: .25vw;
+}
+
+#start {
+  position: absolute;
+  top: 13.25vw;
+  left: 5vw;
+}
+
+#sStrict {
+  position: absolute;
+  top: 13.25vw;
+  right: 4.75vw;
+}
+
+#startBtn {
+  border: solid black 1px;
+  height: 2.25vw;
+  width: 2.25vw;
+  background-color: red;
+  border-radius: 100%;
+  position: absolute;
+  top: 15vw;
+  left: 5.25vw;
+  box-shadow: inset .25vw .5vw 1.5vw gray;
+}
+
+#strictBtn {
+  border: solid black 1px;
+  height: 2.25vw;
+  width: 2.25vw;
+  background-color: yellow;
+  border-radius: 100%;
+  position: absolute;
+  top: 15vw;
+  right: 5vw;
+  box-shadow: inset .25vw .5vw 1.5vw gray;
+}
+
+#strictLight {
+  height: .3vw;
+  width: .3vw;
+  background-color: #d70000;
+  border-radius: 100%;
+  position: absolute;
+  top: 15vw;
+  right: 7.5vw;
+}
+
+#onOffSwitch {
+  background-color: black;
+  height: 1.5vw;
+  width: 3.1vw;
+  position: absolute;
+  top: 18.5vw;
+  left: 9.7vw;
+}
+
+#on {
+  position: absolute;
+  top: 18.25vw;
+  left: 8vw;
+}
+
+#off {
+  position: absolute;
+  top: 18.25vw;
+  right: 8vw;
+}
+
+#slideOn {
+  background-color: black;
+  height: 1.4vw;
+  width: 1.4vw;
+  position: absolute;
+  top: 0vw;
+  left: 0vw;
+}
+
+#slideOff {
+  background-color: blue;
+  height: 1.4vw;
+  width: 1.4vw;
+  position: absolute;
+  top: 0vw;
+  right: 0vw;
+}
+
+#start,
+#sStrict,
+#count,
+#on,
+#off {
+  color: white;
+  font-size: 1.25vw;
+}
+
+#E {
+  font-size: 1vw;
+  color: white;
+  position: absolute;
+  top: 13.75vw;
+  left: 9.25vw;
+}
+
+#M {
+  font-size: 1vw;
+  color: white;
+  position: absolute;
+  top: 13.75vw;
+  left: 0vw;
+  right: 0vw;
+}
+
+#H {
+  font-size: 1vw;
+  color: white;
+  position: absolute;
+  top: 13.75vw;
+  right: 9.25vw;
+}
+
+#EMH {
+  background-color: black;
+  height: 1.6vw;
+  width: 4.5vw;
+  position: absolute;
+  top: 15.5vw;
+  left: 9vw;
+}
+
+#slideE,
+#slideM,
+#slideH {
+  height: 1.5vw;
+  width: 1.5vw;
+}
+
+#slideE {
+  position: absolute;
+  leftt: 0vw;
+}
+
+#slideM {
+  position: absolute;
+  left: 1.5vw;
+  right: 0vw;
+  top: 0vw;
+  bottom: 0vw;
+}
+
+#slideH {
+  position: absolute;
+  right: 0vw;
+}
+
+#tutorial {
+  border: double black 1vw;
+  border-radius: 1%;
+  font-family: 'Katibeh', cursive;
+  padding-top: 8vw;
+  padding-bottom: 12vw;
+  padding-right: 15vw;
+  padding-left: 15vw;
+  margin: 8vw;
+  margin-top: 3vw;
+  background-color: white;
+  opacity: 1;
+}
+
+#tutorialMsg {
+  color: black;
+}
+
+#wel {
+  font-size: 5vw;
+  border: none;
+}
+
+#playSimon {
+  font-size: 5vw;
+}
+
+#ready {
+  position: relative;
+  top: 1vw;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+#inst {
+  position: absolute;
+  left: 5vw;
+  top: 5vw;
+  margin-top: 2vw;
+  border: double black .25vw;
+  font-size: 3vw;
+  font-family: 'Katibeh', cursive;
+  padding: none;
+}
+
+#ready:focus,
+#inst:focus,
+#ready:active,
+#inst:focus,
+#playSimon:focus,
+#playSimon:active {
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+#instTxt {
+  position: relative;
+  top: .7vw;
+}
+
+
+/* CLASSES */
+
+.innerShadow {
+  box-shadow: inset 0vw 0vw 5vw .2vw white;
+}
+
+.hidden {
+  display: none;
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+.selected {
+  background-color: blue;
+}
+
+.tutH2 {
+  font-size: 4vw;
+  border-top: .5vw solid black;
+  padding-top: 1vw;
+}
+
+.tutSpan {
+  opacity: .9;
+  font-size: 2.75vw;
+}

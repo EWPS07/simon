@@ -1,0 +1,16 @@
+{
+  "name": "simon",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "description": "A digital recreation of the classic game Simon",
+  "dependencies": {
+    "body-parser": "^1.13.2",
+    "bootstrap": "^3.3.7",
+    "express": "^4.13.1",
+    "jquery": "^3.1.0",
+    "nodemon": "^1.10.2"
+  }
+}
